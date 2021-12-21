@@ -23,8 +23,31 @@ a:hover {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "lepetit";
+  src: url(fonts/ScribbleNoteDemoRegular-RpqoE.otf);
+}
+
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
+}
+
+customFontH1 {
+  font-family: lepetit;
+  margin: 0;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 56px;
+  color: #4c394e;
+}
+
+customFontH2 {
+  font-family: lepetit;
+  margin: 0;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 56px;
+  color: #4c394e;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +60,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #eb5d1e;
+  background: #2f8ff5;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -49,7 +72,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #ee7843;
+  background: #6eb5ff;
   color: #fff;
 }
 .back-to-top.active {
@@ -293,8 +316,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero {
   width: 100%;
   height: 70vh;
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);
-  border-bottom: 2px solid #fcebe3;
+  background: rgb(172,231,255);
+  background: linear-gradient(0deg, rgba(172,231,255,1) 0%, rgba(255,255,255,1) 100%);
+  border-bottom: 0px solid #fcebe3;
   margin: 72px 0 -72px 0;
 }
 #hero h1 {
@@ -309,6 +333,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin: 15px 0 0 0;
   font-size: 24px;
 }
+
 #hero .btn-twitter {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -488,12 +513,8 @@ section {
 # About
 --------------------------------------------------------------*/
 #about {
-  width: 100%;
-  height: 70vh;
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,255,175,1) 100%);
-  border-bottom: 2px solid #fcebe3;
-  margin: 72px 0 -72px 0;
+  background: rgb(172,231,255);
+  background: linear-gradient(180deg, rgba(172,231,255,1) 0%, rgba(167,154,255,1) 100%);
 }
 .about h3 {
   font-weight: 700;
@@ -504,7 +525,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
-  color: #7a6960;
+  color: #4c394e;
 }
 .about i {
   font-size: 48px;
@@ -529,6 +550,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  background: rgb(255,181,232);
+  background: linear-gradient(0deg, rgba(255,181,232,1) 0%, rgba(167,154,255,1) 100%);
+}
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -543,13 +568,13 @@ section {
 }
 .services .icon-box:hover {
   transform: translateY(-5px);
-  border-color: #ef7f4d;
+  border-color: #85e3ff;
 }
 .services .icon i {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: #ef7f4d;
+  color: #85e3ff;
 }
 .services .title {
   font-weight: 700;
@@ -739,6 +764,10 @@ section {
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
+#faq {
+  background: rgb(255,181,232);
+  background: linear-gradient(180deg, rgba(255,181,232,1) 0%, rgba(255,255,209,1) 100%);
+}
 .faq {
   padding: 60px 0;
 }
@@ -795,6 +824,10 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+#team {
+  background: rgb(175,248,219);
+  background: linear-gradient(0deg, rgba(175,248,219,1) 0%, rgba(255,255,209,1) 100%);
+}
 .team {
   background: #fff;
   padding: 60px 0;
@@ -899,6 +932,7 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+
 .contact .info {
   border-top: 3px solid #eb5d1e;
   border-bottom: 3px solid #eb5d1e;
@@ -1052,11 +1086,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: rgb(175,248,219);
+  background: linear-gradient(180deg, rgba(175,248,219,1) 0%, rgba(209,244,255,1) 100%);
   padding: 0 0 30px 0;
   color: #212529;
   font-size: 14px;
-  background: #fef8f5;
 }
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -1194,7 +1228,7 @@ section {
   color: #212529;
 }
 #footer .credits a {
-  color: #eb5d1e;
+  color: #2f8ff5;
 }
 @media (max-width: 575px) {
   #footer .copyright, #footer .credits {
