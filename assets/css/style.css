@@ -144,10 +144,11 @@ customFontH2 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 40px;
   color: #4e4039;
   white-space: nowrap;
   transition: 0.3s;
+  font-family: lepetit;
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
